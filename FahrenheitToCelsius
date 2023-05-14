@@ -1,0 +1,18 @@
+// Create a program that converts Fahrenheit to Celsius
+
+import java.util.*;
+
+public class FahrenheitToCelsius {
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+        float temperature;
+
+        System.out.println("Enter a temperature:");
+        temperature = in.nextFloat();
+        temperature = ((temperature - 32)*5)/9;
+
+        System.out.println("The converted temperature in Celsius is " +temperature);
+
+    }
+}
