@@ -1,3 +1,6 @@
+// Create a program that has a Simple Interest Calcultor that include principle, interest rate, and time.
+
+
 import java.util.*;
 
 public class Main {
