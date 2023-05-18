@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        int x, y, z;  // declaring the variables to swap
+         x = 2;  // initialize 2 variables
+         y = 3;
+        System.out.println("First iteration: " + "x = " +x+ " y= " +y);
+
+        z = x;  // z = 2
+        x = y;  // x = 3
+        y = z;  // y = 2
+
+        System.out.println("Second iteration: " + "x = " +x+ " y= " +y);
+
+
+    }
+}
