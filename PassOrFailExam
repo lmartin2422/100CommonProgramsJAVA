@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        float gradeObtained, passingGrade;  // declaring the variables
+        char grade;
+        passingGrade = 69;  // initializing a variable
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your grade: ");
+        gradeObtained = input.nextFloat();
+
+        if (gradeObtained > passingGrade) {
+            System.out.println("You have a passing grade.");
+            if (gradeObtained > 89) {
+                grade = 'A';
+                System.out.println(grade);
+            } else if (gradeObtained > 79) {
+                grade = 'B';
+                System.out.println(grade);
+            } else if (gradeObtained > 69) {
+                grade = 'C';
+                System.out.println(grade);
+            }
+
+        }
+        else
+            System.out.println("You failed the exam");
+    }
+}
