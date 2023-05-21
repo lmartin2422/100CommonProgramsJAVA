@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        // Determine if a number is a Prime Number
+
+        Scanner input = new Scanner(System.in);
+        boolean flag = false;
+        int num;
+
+        System.out.println("Enter a number: ");
+        num = input.nextInt();
+
+        for (int i = 2; i <= num/2; i++) {
+
+            // condition for nonprime number
+            if(num % i == 0) {
+                flag = true;
+                break;
+            }
+        }
+        if (!flag)  // if the flag is false
+            System.out.println(+num+ " is a prime number.");
+        else
+            System.out.println(+num+ " is not a prime number");
+    }
+}
