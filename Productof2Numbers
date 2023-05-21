@@ -1,0 +1,33 @@
+import java.util.*;
+
+class Products {
+
+    static int products(int x, int y) {
+        if (x < y)
+            return products(y, x);
+        else if (y != 0) {
+            return (x + products(x, y-1));
+        }
+        else return 0;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("Product of 2 Numbers Program");
+
+        Scanner input = new Scanner(System.in);  // creates a variable for the scanner
+
+        System.out.println("Enter 2 numbers separated by a space: ");
+        float number1 = input.nextFloat();  // stores the user's input
+        float number2 = input.nextFloat();
+
+        float product = number1 * number2;  // formula to determine the product of 2 numbers
+
+        System.out.println("The product of " +number1+ " and " +number2+ " is " + product);
+        //display output to the console
+
+        System.out.println(Products.products(15, 10));  // references class Public from above
+    }
+}
