@@ -1,0 +1,11 @@
+import java.net.InetAddress;  // imports InetAddress package
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        
+        // Gets the Host's IP Address
+
+        InetAddress IP = InetAddress.getLocalHost();  // creates an IP variable
+        System.out.println("IP Address: " + IP.getHostAddress());  // displays user's ip address
+    }
+}
