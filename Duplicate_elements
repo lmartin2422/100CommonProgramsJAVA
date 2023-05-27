@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+
+        // initializing an array called arr
+        int [] arr = new int [] {1, 2, 3, 4, 2, 7, 8, 8, 3, 4, 2};
+
+        System.out.println("Duplicate elements: ");
+
+        // searching the array for any duplicates
+        for (int i = 0; i < arr.length; i++) { // searches through the array
+            for (int j = i + 1; j < arr.length; j++) { // searches through the array again but with a different var
+                if (arr[i] == arr[j]) {  // if an element in var i equals an element in var j
+                    System.out.println(arr[j]);  // prints all elements that equal each other
+                }
+            }
+        }
+    }
+}
