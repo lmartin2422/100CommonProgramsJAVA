@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("Natural Number Program!");
+
+        // declaring and initializing objects
+        int n;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter any number: ");
+        n = input.nextInt();  // stores user input for a number
+
+        Main obj = new Main();  // new object to help display the natural number
+        System.out.println("Natural numbers till " +n+":");
+        obj.natural(n, 1);  // ties the new object with the method below
+
+    }
+
+    int natural(int y, int i) {  // method with arguments
+        if(i <= y) {
+            System.out.println(i + " ");
+            return (natural(y, ++i));
+        }
+        return 1;
+    }
+}
