@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int array[] = {1, 2, 3, 4, 5};  // declaring an array
+        int search, i;  // declaring attributes
+
+        Scanner input = new Scanner(System.in);  // creating an object for input scanner
+
+        System.out.println("Enter the number for a search: ");
+        search = input.nextInt();  // saves user input
+
+        for (i = 0; i < array.length; i++) {  // for loop to search in the array for the int
+            if (search == array[i]) {  // if the user's number is in the array
+                System.out.println(search + " is present at location " + (i + 1) + ".");
+                break;
+            }}
+        if (i == array.length) {
+            System.out.println(search + " is not present in the array");
+
+        }
+    }
+}
