@@ -1,0 +1,27 @@
+public class Solution {
+
+    public  String convertToTitle(int columnNumber) {
+        StringBuilder result = new StringBuilder();
+
+        while (columnNumber > 0) {
+            columnNumber--;
+            int remainder = columnNumber % 26;
+            char ch = (char) ('A' + remainder);
+            result.insert(0, ch);
+            columnNumber /=26;
+        }
+        System.out.println("Output from Solution class " + result.toString());
+        return result.toString();
+    }
+}
+
+
+// Given an integer "columnNumber", return its corresponding column title as it appears in an Excel Sheet
+public class Main {
+    public static void main(String[] args) {
+
+        Solution solution = new Solution();
+        String output = solution.convertToTitle(33);
+        System.out.println(output);
+    }
+}
