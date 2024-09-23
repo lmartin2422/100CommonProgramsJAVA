@@ -1,0 +1,15 @@
+// https://edabit.com/challenge/8Ty2vq2YtcBp6CFc8
+// Create a method that takes two integers as arguments and returns their sum.
+public class Main {
+    public static int SumOfTwoNumbers(int a, int b) {
+        return a + b;
+    }
+
+
+    public static void main(String[] args) {
+        System.out.println(SumOfTwoNumbers(3, 2));
+        System.out.println(SumOfTwoNumbers(-3, -6));
+        System.out.println(SumOfTwoNumbers(7, 3));
+        System.out.println("Hello world!");
+    }
+}
